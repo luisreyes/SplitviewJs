@@ -122,8 +122,7 @@ var splitview = (function(){
         _do.style.left = lp +'%';
       }
 
-      //if( ( (tp > 2.5) && (tp < 97.5) ) || ( (lp > 2.5) && (lp < 97.5) ) ){
-        redraw(_dd, _mp);
+      redraw(_dd, _mp);
       return false;
     }
   }
