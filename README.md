@@ -2,7 +2,12 @@ Split View v0.1
 ==========
 Pure JavaScript view splitter. Break the viewport into 4 resizable sections.
 
-<a href="http://www.luisreyes.com/splitview/" target="_blank">View Demo</a>
+<a href="http://www.luisreyes.com/splitview/?layout=30,50,70" target="_blank">View Demo</a>
+
+```
+query: layout=h1,w,h2
+
+```
 
 ####DISCLAIMER
 This is still work in progress. Not all features have been implemented and it has not been tested on older browsers at all.
