@@ -1,8 +1,8 @@
-Split View v0.1
-==========
-Pure JavaScript view splitter. Break the viewport into 4 resizable sections.
+<img src="http://www.luisreyes.com/splitview/splitview.png" title="splitview.js"/>
 
-<a href="http://www.luisreyes.com/splitview/?layout=30,50,70" target="_blank">View Demo</a>
+>Pure JavaScript view splitter. Break the viewport into 4 resizable sections.
+
+*Splitview v0.2* <a href="http://www.luisreyes.com/splitview/?layout=30,50,70" target="_blank">View Demo</a>
 
 ```javascript
 query: layout=val0,val1,val2
