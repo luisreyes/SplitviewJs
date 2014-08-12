@@ -45,6 +45,8 @@ var
 
 document.onmousemove = mouseMove;
 document.onmouseup = mouseUp;
+document.addEventListener('touchmove',mouseMove, false);
+document.addEventListener('touchend',mouseUp, false);
 
 
 makeDraggable(vGrip);
@@ -93,18 +95,23 @@ function getPosition(e) {
 
 function mouseMove(e) {
   e = e || window.event;
+  e.preventDefault();
   var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0),
       h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
 
   _mp = mouseCoords(e);
   if (_do) {
+    var tp = ((_mp.y-_mo.y) / h) * 100,
+        lp = ((_mp.x - _mo.x) / w) * 100;
     if (_dd === 'h') {
-      _do.style.top = ((_mp.y-_mo.y) / h) * 100 +'%';
+      _do.style.top = tp +'%';
     }
     else {
-      _do.style.left = ((_mp.x - _mo.x) / w) * 100 +'%';
+      _do.style.left = lp +'%';
     }
-    redraw(_dd, _mp);
+
+    //if( ( (tp > 2.5) && (tp < 97.5) ) || ( (lp > 2.5) && (lp < 97.5) ) ){
+      redraw(_dd, _mp);
     return false;
   }
 }
@@ -115,13 +122,18 @@ function mouseUp() {
 
 function makeDraggable(element) {
   if (!element) return;
-  element.onmousedown = function(e) {
+  element.onmousedown = touch;
+  element.addEventListener('touchstart',touch);
+
+
+}
+
+function touch(e) {
     _do = this;
     _dd = this.className[0];
     _mo = getMouseOffset(this, e);
     return false;
   }
-}
 
 function redraw(dir, _mp) {
   var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0),
