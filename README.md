@@ -1,4 +1,4 @@
-<img src="http://www.luisreyes.com/splitview/splitview.png" title="splitview.js"/>
+<img src="http://www.luisreyes.com/splitview/splitviewlogo.png" title="splitview.js"/>
 
 >Pure JavaScript view splitter. Break the viewport into 4 resizable sections.
 
