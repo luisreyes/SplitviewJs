@@ -4,9 +4,12 @@ Pure JavaScript view splitter. Break the viewport into 4 resizable sections.
 
 <a href="http://www.luisreyes.com/splitview/?layout=30,50,70" target="_blank">View Demo</a>
 
-```
-query: layout=h1,w,h2
-
+```javascript
+query: layout=val0,val1,val2
+----------------------------
+val0 =  int (0 - 100) | Height of the left horizontal divider.
+val1 =  int (0 - 100) | Position of the vertical divider.
+val2 =  int (0 - 100) | Height of the right horizontal container.
 ```
 
 ####DISCLAIMER
