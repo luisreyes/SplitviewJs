@@ -2,11 +2,36 @@
 
 >Pure JavaScript view splitter. Break the viewport into 4 resizable sections.
 
-*Splitview v0.2* <a href="http://www.luisreyes.com/splitview/demo" target="_blank">View Demo</a>
+**Splitview v0.2.1** <a href="http://www.luisreyes.com/splitview/demo" target="_blank">View Demo</a>
 
+**Initialization**
+```javascript
+Splitview.init({
+  // Main wrapper for you containers
+  main:'work-space', 
+  
+  // Force layout to this configuration
+  // optional: default is 50,50,50
+  layout: '30,50,70',
+  
+  // Sets the element to the sectioned selected
+  containers:{
+    // Top left
+    tl:'container0',
+    // Top Right
+    tr:'container1',
+    // Bottom Left
+    bl:'container2',
+    // Bottom Right
+    br:'container3'
+  }
+});
+```
+
+If the **layout property** is not set in the **init options** it will read the layout configuration from the **query string** if present.
 ```javascript
 query: layout=val0,val1,val2
-----------------------------
+____________________________
 val0 =  int (0 - 100) | Height of the left horizontal divider.
 val1 =  int (0 - 100) | Position of the vertical divider.
 val2 =  int (0 - 100) | Height of the right horizontal container.
