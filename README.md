@@ -2,7 +2,7 @@
 
 >Pure JavaScript view splitter. Break the viewport into 4 resizable sections.
 
-*Splitview v0.2* <a href="http://www.luisreyes.com/splitview/?layout=30,50,70" target="_blank">View Demo</a>
+*Splitview v0.2* <a href="http://www.luisreyes.com/splitview/demo" target="_blank">View Demo</a>
 
 ```javascript
 query: layout=val0,val1,val2
