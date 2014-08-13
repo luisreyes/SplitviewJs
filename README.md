@@ -30,7 +30,7 @@ Splitview.init({
 
 If the **layout property** is not set in the **init options** it will read the layout configuration from the **query string** if present.
 ```javascript
-query: layout=val0,val1,val2
+query: layout= val0, val1, val2
 ____________________________
 val0 =  int (0 - 100) | Height of the left horizontal divider.
 val1 =  int (0 - 100) | Position of the vertical divider.
