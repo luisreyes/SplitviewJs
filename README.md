@@ -8,14 +8,14 @@
 ####INITIALIZATION
 ```javascript
 Splitview.init({
-  // Main wrapper for you containers
+  // Main wrapper for your containers
   main:'work-space', 
   
-  // Force layout to this configuration
+  // Force layout to this configuration in percentages
   // optional: default is 50,50,50
   layout: '30,50,70',
   
-  // Sets the element to the sectioned selected
+  // Set node element the specified section
   containers:{
     // Top left
     tl:'container0',
@@ -27,6 +27,16 @@ Splitview.init({
     br:'container3'
   }
 });
+```
+
+The **layout** con be modified programatically using *setLayout()*.
+```javascript
+// Set Configuration values
+var topHeight = 35,
+    vertBar = 60;
+    
+// Force size programatically
+Splitview.setLayout(topHeight,vertBar,topHeight);
 ```
 
 If the **layout property** is not set in the **init options** it will read the layout configuration from the **query string** if present.
