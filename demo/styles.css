@@ -1,6 +1,36 @@
 body, html{ color: #333; font-family: sans-serif; }
 
-.lr-split-space { background-color: #333; }
+/* Demo Specific */
+header{
+  border-bottom: 1px solid #333;
+  height: 10%;
+  box-sizing: border-box;
+}
+
+header .logo{
+  width: 100%;
+  max-width: 310px;
+  height: 100%;
+  margin: 0 auto;
+  background-image: url(splitview-0.2.2.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 80%;
+}
+
+footer{
+  position: fixed;
+  z-index: 100;
+  bottom: -6px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+/* Splitview Specific */
+.lr-split-space { background-color: #333; height:90%; }
 
 .lr-tl { background-color:#389090; }
 .lr-tr { background-color:#f47e7d; }
