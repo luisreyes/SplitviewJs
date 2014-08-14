@@ -5,7 +5,7 @@
 
 **Splitview v0.2.3** <a href="http://www.luisreyes.com/splitview/demo">View Demo</a>
 
-**Initialization**
+####INITIALIZATION
 ```javascript
 Splitview.init({
   // Main wrapper for you containers
