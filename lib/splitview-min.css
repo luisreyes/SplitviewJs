@@ -1,2 +1,2 @@
-/*! Splitview.js 0.2.3 <https://github.com/luisreyes/Splitview.js> Luis Reyes © 2014 MIT License */
+/*! Splitview.js v0.2.3 <https://github.com/luisreyes/Splitview.js> Luis Reyes <luis@luisreyes.com> ©2014 MIT License !*/
 body,html{height:100%;margin:0}.lr-split-space{width:100%;height:100%}.lr-bl,.lr-br,.lr-grip,.lr-split-space,.lr-tl,.lr-tr{position:absolute}.lr-tl{top:0;left:0}.lr-tr{top:0;right:0}.lr-bl{bottom:0;left:0}.lr-br{bottom:0;right:0}.lr-grip:hover{border-width:3px}.lr-h,.lr-hl,.lr-hr{cursor:n-resize;height:10px;top:50%;width:50%;border-top:1px solid gray}.lr-hr{right:0}.lr-v,.lr-vb,.lr-vt{cursor:ew-resize;width:10px;height:100%;left:50%;border-left:1px solid gray}.lr-container{box-sizing:border-box;overflow:auto;padding:0 20px}
