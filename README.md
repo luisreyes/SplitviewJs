@@ -39,7 +39,7 @@ val2 =  int (0 - 100) | Height of the right horizontal container.
 ```
 
 ####DISCLAIMER
-This is still work in progress. Not all features have been implemented and it has not been tested on older browsers at all.
+Not all features have been implemented and it has not been tested on older browsers at all.
 
 ####LICENSE
 The MIT License (MIT)
