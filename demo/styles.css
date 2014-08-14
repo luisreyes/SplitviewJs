@@ -9,13 +9,13 @@ header{
 
 header .logo{
   width: 100%;
-  max-width: 310px;
+  max-width: 600px;
   height: 100%;
   margin: 0 auto;
   background-image: url(splitview-0.2.2.png);
   background-repeat: no-repeat;
   background-position: 50%;
-  background-size: 80%;
+  background-size: 50%;
 }
 
 footer{
