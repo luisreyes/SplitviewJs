@@ -29,7 +29,7 @@ Splitview.init({
 });
 ```
 
-#####Update Programatically
+#####[Update Programatically]()
 The **layout** con be modified programatically using *setLayout()*.
 ```javascript
 // Set Configuration values
@@ -40,7 +40,7 @@ var topHeight = 35,
 Splitview.setLayout(topHeight,vertBar,topHeight);
 ```
 
-#####Update Programatically through query string 
+#####[Update Programatically through query string]()
 If the **layout property** is not set in the **init options** it will read the layout configuration from the **query string** if present.
 ```javascript
 query: layout= val0, val1, val2
