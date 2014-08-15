@@ -1,4 +1,4 @@
-<img src="http://www.luisreyes.com/splitview/splitview-0.2.2.png" title="Splitview.js"/>
+<img src="http://www.luisreyes.com/splitview/splitview-0.2.2.png" title="splitview.js"/>
 
 > Pure JavaScript view splitter.
 > Break the viewport into 4 resizable sections.
@@ -7,7 +7,7 @@
 
 ####INITIALIZATION
 ```javascript
-Splitview.init({
+splitview.init({
   // Main wrapper for your containers
   main:'work-space', 
   
@@ -38,7 +38,7 @@ var topHeight = 35,
     vertBar = 60;
     
 // Force size programatically
-Splitview.setLayout(topHeight,vertBar,topHeight);
+splitview.setLayout(topHeight,vertBar,topHeight);
 ```
 
 #####Update Programatically through query string
@@ -51,6 +51,26 @@ val0 =  int (0 - 100) | Height of the left horizontal divider.
 val1 =  int (0 - 100) | Position of the vertical divider.
 val2 =  int (0 - 100) | Height of the right horizontal container.
 ```
+
+#####Events
+>splitview has events!
+
+```javascript
+// Add or Remove Events
+splitview.addEventListener(event, callback());
+splitview.removeEventListener(event, callback());
+```
+
+| Event             | Description                               |
+|------------------ |------------------------------------------ |
+| ready             | initialization is complete                |
+| resize            | viewports have changed size               |
+| resizehorizontal  | viewports have changed size horizontally  |
+| resizevertical    | Viewports have changed size vertically    |
+| resizestart       | Viewports have begun to change size       |
+| resizestop        | Viewports have stopped changing size      |
+
+
 
 ####DISCLAIMER
 Not all features have been implemented and it has not been tested on older browsers at all.

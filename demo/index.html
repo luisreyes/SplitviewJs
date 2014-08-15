@@ -65,7 +65,7 @@
 
   <script>
 
-    Splitview.init({
+    splitview.init({
       main:'work-space',
       layout: '30,50,70',
       containers:{
@@ -75,7 +75,19 @@
         br:'container3'
       }
     });
-  
+
+    // This is an example of the events
+    
+    //splitview.addEventListener('resize', call);
+    splitview.addEventListener('resizehorizontal', call);
+    splitview.addEventListener('resizevertical', call);
+    splitview.addEventListener('resizestart', call);
+    splitview.addEventListener('resizestop', call);
+    
+    function call(e){
+      console.log(e);
+    }
+
   </script>
 
   </body>

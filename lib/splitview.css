@@ -1,6 +1,6 @@
 /*! 
- * Splitview.js v0.2.3 
- * <https://github.com/luisreyes/Splitview.js> 
+ * splitview.js v0.2.4 
+ * <https://github.com/luisreyes/splitview.js> 
  * Luis Reyes <luis@luisreyes.com> 
  * ©2014 MIT License 
  */
@@ -27,6 +27,7 @@ body, html{
 .lr-bl { bottom:0; left:0; }
 .lr-br { bottom:0; right:0; }
 
+.lr-grip{ z-index:1000; }
 .lr-grip:hover{border-width:3px;}
 
 .lr-h, .lr-hl, .lr-hr{
