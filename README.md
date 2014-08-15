@@ -3,7 +3,7 @@
 > Pure JavaScript view splitter.
 > Break the viewport into 4 resizable sections.
 
-**Splitview v0.2.3** <a href="http://www.luisreyes.com/splitview/demo">View Demo</a>
+**Splitview v0.2.4** <a href="http://www.luisreyes.com/splitview/demo">View Demo</a>
 
 ####INITIALIZATION
 ```javascript
@@ -29,43 +29,53 @@ splitview.init({
 });
 ```
 
-#####Update Programatically
+#####METHODS
+**Update Programatically**
 >The **layout** con be modified programatically using *setLayout()*.
 
 ```javascript
+
 // Set Configuration values
+
 var topHeight = 35,
     vertBar = 60;
     
 // Force size programatically
+
 splitview.setLayout(topHeight,vertBar,topHeight);
+
 ```
 
-#####Update Programatically through query string
+**Update Programatically through query string**
 >If the **layout property** is not set in the **init options** it will read the layout configuration from the **query string** if present.
 
 ```javascript
-query: layout= val0, val1, val2
-____________________________
+
+//query: layout= val0, val1, val2
+
 val0 =  int (0 - 100) | Height of the left horizontal divider.
 val1 =  int (0 - 100) | Position of the vertical divider.
 val2 =  int (0 - 100) | Height of the right horizontal container.
+
 ```
 
-#####Events
+#####EVENTS
 >splitview has events!
 
 ```javascript
+
 // Add or Remove Events
+
 splitview.addEventListener(event, callback());
 splitview.removeEventListener(event, callback());
+
 ```
 
 | Event             | Description                               |
 |------------------ |------------------------------------------ |
-| ready             | initialization is complete                |
-| resize            | viewports have changed size               |
-| resizehorizontal  | viewports have changed size horizontally  |
+| ready             | Initialization is complete                |
+| resize            | Viewports have changed size               |
+| resizehorizontal  | Viewports have changed size horizontally  |
 | resizevertical    | Viewports have changed size vertically    |
 | resizestart       | Viewports have begun to change size       |
 | resizestop        | Viewports have stopped changing size      |
@@ -73,7 +83,8 @@ splitview.removeEventListener(event, callback());
 
 
 ####DISCLAIMER
-Not all features have been implemented and it has not been tested on older browsers at all.
+Has not been tested on older browsers at all.
+
 
 ####LICENSE
 The MIT License (MIT)
