@@ -30,12 +30,12 @@ footer{
 
 
 /* Splitview Specific */
-.lr-split-space { background-color: #333; height:90%; }
+.sv-split-space { background-color: #333; height:90%; }
 
-.lr-tl { background-color:#389090; }
-.lr-tr { background-color:#f47e7d; }
-.lr-bl { background-color:#b5d045; }
-.lr-br { background-color:#fb8335; }
+.sv-tl { background-color:#389090; }
+.sv-tr { background-color:#f47e7d; }
+.sv-bl { background-color:#b5d045; }
+.sv-br { background-color:#fb8335; }
 
-.lr-v, .lr-vt, .lr-vb{ border-left: 1px solid #333; }
-.lr-h, .lr-hl, .lr-hr{ border-top: 1px solid #333; }
+.sv-v, .sv-vt, .sv-vb{ border-left: 1px solid #333; }
+.sv-h, .sv-hl, .sv-hr{ border-top: 1px solid #333; }
